@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+     .justify-content, .align-items, .align-content{
+        display: flex;
+        background-color: purple;
+        margin: 10px;
+        padding: 10px;
+        height: 600px;
+
+     }
+     .child-div{
+        background-color: rgb(219, 20, 139);
+        margin: 0px 10px;
+        width: 100%;
+     }
+     .child-div div{
+        width: 50px;
+        height: 50px;
+        background-color: rgb(255, 166, 0);
+        margin: 0px 10px;
+     }
+     .justify-content{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+     }
+     .align-items{
+        align-items: end;
+        justify-content: center;
+
+     }
+     .align-items .child-div, .align-content .child-div{
+        height: 100px;
+     }
+     .align-content .child-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .align-content{
+        align-content: space-around;
+        flex-wrap: wrap;
+     }
+    
+         </style>
+    <body>
+    <div class="justify-content">
+    <div class="child-div"></div>
+    <div class="child-div"></div>
+    <div class="child-div"></div>
+</div>
+    <div class="align-items">
+        <div class="child-div"></div>
+        <div class="child-div"></div>
+        <div class="child-div"></div>
+    </div>
+
+    <div class="align-content">
+        <div class="child-div">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+        <div class="child-div">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+        <div class="child-div">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    </div>
+    </body>
+</html>

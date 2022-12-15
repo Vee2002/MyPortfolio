@@ -1,0 +1,28 @@
+navbar-nav{
+    font-size: small !important;
+    font: weight 100px !important;
+    justify-content: center !important;
+
+} 
+.heading1, .heading2, .heading3{
+    justify-content: center !important;    
+    margin-left: 20rem !important;
+    margin-top: 0px !important;
+}
+h-6{
+    font-size: small !important
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important */
+}
+.design-1, .design-2, .design-3, .design-4, .design-5, .design-6{
+    object-fit: cover !important;
+    justify-content: space-between !important;
+    margin-top: 10px !important;
+    /* width: 250px !important;
+    height: 250px !important; */
+    }    
+
+.design-3b{
+    transition-delay: 1s !important;
+    transition-duration: 10s !important;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+}

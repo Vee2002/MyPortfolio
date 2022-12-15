@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .block-elements, .inline-elements, .inline-block-elements{
+                margin: 10px;
+                height: 40vh;
+                padding: 10px;
+            }
+            .block-elements{
+                display: flex;
+                /* flex-flow: column wrap; */
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                background-color: azure;
+            }
+            .inline-elements{
+                background-color: deeppink;
+            }
+            .block{
+                display: flex;
+                width: 400px;
+                height: 100px;
+                background-color: blue;
+                margin: 10px;
+                padding: 10px;
+            }
+            .inline{
+                display: inline;
+                width: 400px;
+                height: 100px;
+                background-color: black;
+                margin: 10px;
+                padding: 10px;
+            }
+            .inline-block-elements{
+                display: none;
+                background-color: magenta;
+            }
+            .inline-block{
+                display: inline-block;
+                width: 400px;
+                height: 100px;
+                background-color: yellow;
+                margin: 10px;
+                padding: 10px;
+            }
+            .child-div{
+                width: 100%
+            }            
+            @keyframes example {
+                    0% {background-color: purple; left: 0px; top: 0px;}
+                    25% {background-color: pink; left:200px; top: 0px;}
+                    50% {background-color: yellow; left:200px; top: 200px;}
+                    100% {background-color: blue; left: 0px; top: 0px;}
+                }
+            .block{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation-name: example;
+                animation-duration: 7s;
+                position: relative;
+            }
+        </style>
+        </head>
+    <body>
+    <div class="block-elements">
+        <div class="block">block 1</div>
+        <div class="block">block 2</div>
+        <div class="block">block 3</div>
+        <div class="block">block 4</div>
+        <div class="block">block 5</div>     
+    </div>
+    <div class="inline-elements">
+    <div class="inline">inline 1</div>
+    <div class="inline">inline 2</div>
+    </div>
+    <div class="inline-block-elements">
+    <div class="inline-block">inline 1</div>
+    <div class="inline-block">inline 2</div>
+    </div>
+
+
+    
+    </div>
+    </body>
+</html>

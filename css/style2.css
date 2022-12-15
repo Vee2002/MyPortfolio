@@ -1,0 +1,42 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.card{
+    display: inline-block;
+    color: bisque;
+    justify-content: space-between;  
+    margin-right: 10px;
+}
+card1, card2, card3, card4{
+    /* display: inline-block; */
+    text-align: center;
+    /* box-sizing: border-box; */
+    width: 100% !important;
+    height: 100% !important;
+    /* flex-wrap: wrap !important; */
+    /* background-color: black; */
+    /* color: bisque; */
+    /* margin: 10px; */
+}
+
+card1{
+    background-color: black !important;
+    order: 1; 
+}
+card2{
+    background-color: rgb(255, 166, 0) !important;
+    order: 1;
+}
+card3{
+    background-color: yellow !important;
+    color: black;
+    order: 1;
+}
+card4{
+    background-color: bisque !important;
+    color: black;
+    order: 1;
+}
